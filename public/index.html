@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Chat Frontend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Login Overlay -->
+  <div id="login">
+    <div class="login-box">
+      <h2>Enter your Name</h2>
+      <input type="text" id="usernameInput" placeholder="Your name" />
+      <button id="joinBtn">Join Chat</button>
+    </div>
+  </div>
+
+  <!-- Main Chat Container -->
+  <div class="chat-container" id="chat" style="display:none;">
+    <header class="chat-header">
+      <h3>Realtime Chat</h3>
+      <button id="clearBtn">Clear Chat</button>
+    </header>
+
+    <div class="chat-main">
+      <aside class="user-list">
+        <h4>Online Users</h4>
+        <ul id="users"></ul>
+      </aside>
+
+      <main class="chat-messages" id="messages"></main>
+    </div>
+
+    <footer class="chat-footer">
+      <input type="text" id="msgInput" placeholder="Type a message..." autocomplete="off">
+      <button id="sendBtn">Send</button>
+      <button id="emojiBtn">😊</button>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
